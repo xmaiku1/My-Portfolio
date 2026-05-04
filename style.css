@@ -1,0 +1,206 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, arial black, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #ff0000, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+/* Header layout */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Profile image */
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+/* Make it responsive */
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .profile-img {
+        width: 70px;
+        height: 70px;
+    }
+}
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+/* Navigation */
+nav {
+    background: #333;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #007bff;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Alternate background */
+section:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Skills List */
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+ul li {
+    background: #ff0000;
+    color: white;
+    margin: 10px auto;
+    padding: 10px;
+    width: 60%;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+/* Projects Section */
+#projects {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Project Title */
+#projects h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Project Link Button Style */
+#projects a {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+#projects a:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Optional: Add a card feel */
+#projects {
+    background: #f9f9f9;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+/* Form */
+contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    ul li {
+        width: 90%;    
+    }
+}
